@@ -14,7 +14,4 @@ multiplier.o : multiplier.cpp
 	g++ -O2 -o multiplier.o -c multiplier.cpp
 
 main.o : main.cpp
-	g++ -O2 -o main.o -c main.cpp calculator.h
-
-clean :
-	rm calc *.o 
+	g++ -O2 -o main.o -c main.cpp
