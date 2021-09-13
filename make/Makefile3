@@ -25,7 +25,7 @@ adder.o : adder.cpp
 	$(CC) $(CFLAGS) -c $<
 multiplier.o : multiplier.cpp
 	$(CC) $(CFLAGS) -c $<
-main.o : main.cpp calculator.h
+main.o : main.cpp
 	$(CC) $(CFLAGS) -c $<
 
 # this pattern can replace as
