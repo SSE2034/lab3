@@ -4,7 +4,7 @@
 # <Target> : <Dependencies>
 #     <Recipe>
 
-clac : main.o adder.o multiplier.o
+calc : main.o adder.o multiplier.o
 	g++ -O2 main.o adder.o multiplier.o -o calc
 
 adder.o : adder.cpp

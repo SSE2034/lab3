@@ -21,11 +21,7 @@ OBJS = main.o adder.o multiplier.o
 $(TARGET) : $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 
-adder.o : adder.cpp
-	$(CC) $(CFLAGS) -c $<
-multiplier.o : multiplier.cpp
-	$(CC) $(CFLAGS) -c $<
-main.o : main.cpp calculator.h
+%.o : %.cpp
 	$(CC) $(CFLAGS) -c $<
 
 clean :

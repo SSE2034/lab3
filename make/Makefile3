@@ -28,5 +28,9 @@ multiplier.o : multiplier.cpp
 main.o : main.cpp calculator.h
 	$(CC) $(CFLAGS) -c $<
 
+# this pattern can replace as
+# %.o : %.cpp
+# 	$(CC) $(CFLAGS) -c $<
+
 clean :
 	rm -f *.o calc
